@@ -1,33 +1,25 @@
 # InstagramManager
 
-InstagramManager is a robust Python tool built on top of the `instagrapi` library, designed to automate and manage Instagram accounts efficiently. It provides a wide range of functionalities, from basic account management (username, bio, profile picture changes) to advanced features like posting photos/stories, interacting with posts (liking, commenting), and retrieving user data (followers, following, posts). This tool is perfect for developers, social media managers, or anyone looking to automate Instagram-related tasks.
+InstagramManager is a Python-based automation tool built with `instagrapi`, designed to streamline Instagram account management and interactions. This project is split into two main files: `index.py` for core functionality (posting, liking, following, etc.) and `createSession.py` for session creation and management. Whether you're updating profiles, posting content, or analyzing followers, this tool has you covered.
 
 ## Features
 
-- **Account Management**
-  - Create and manage Instagram sessions
-  - Update username, display name, bio, and profile picture
-  - Retrieve detailed account information (followers, following, posts count)
+- **Session Management** (`createSession.py`)
+  - Create and load Instagram sessions
+  - Persistent session storage in JSON files
 
-- **Social Interactions**
-  - Follow/unfollow users
-  - Like and comment on posts
+- **Core Functionality** (`index.py`)
+  - Update username, name, bio, and profile picture
+  - Post photos and stories
+  - Like, comment, follow, and unfollow
   - Send direct messages
+  - Download media and profile pictures
+  - Retrieve followers, following, and posts
 
-- **Content Management**
-  - Post photos to feed with captions
-  - Upload stories
-  - Download media from posts
-
-- **User Data**
-  - Get lists of followers and following
-  - Retrieve recent user posts
-
-- **Additional Features**
-  - Automatic package installation
-  - Comprehensive logging
-  - Image processing with Pillow
-  - Session persistence with JSON files
+- **Additional Capabilities**
+  - Automatic dependency installation
+  - Detailed logging
+  - Image processing support
 
 ## Prerequisites
 
@@ -37,7 +29,12 @@ InstagramManager is a robust Python tool built on top of the `instagrapi` librar
 
 ## Installation
 
-1. **Clone the Repository**
+1. **Download the Files**
+   Download the two main scripts from the repository:
+   - [`index.py`](./index.py)
+   - [`createSession.py`](./createSession.py)
+
+   You can do this manually or via command line:
    ```bash
-   git clone https://github.com/faraz_py/InstagramManager.git
-   cd InstagramManager
+   wget https://raw.githubusercontent.com/faraz_py/instagram-automator/main/index.py
+   wget https://raw.githubusercontent.com/faraz_py/instagram-automator/main/createSession.py
